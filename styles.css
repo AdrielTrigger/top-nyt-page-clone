@@ -1,0 +1,57 @@
+body {
+    margin: 0 0 0 0;
+}
+
+/* HEADER */
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    position: fixed;
+}
+
+/* ______________________________________________________________ */
+
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.text {
+    padding: 20px 0 20px 0;
+    width: 650px;
+}
+
+.entry-pic {
+    width: 900px;
+    height: 600px;
+    background-color: rgb(0, 90, 23);
+}
+
+.info-grid {
+    width: 900px;
+    height: 600px;
+    background-color: cadetblue;
+}
+
+.video, .pic {
+    width: 650px;
+    height: 400px;
+    background-color: darkgoldenrod;
+}
+
+/* ______________________________________________________________ */
+
+
+/* MORE NEWS */
+
+/* ______________________________________________________________ */
+
+
+/* FOOTER */
