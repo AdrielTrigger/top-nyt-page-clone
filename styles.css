@@ -7,8 +7,46 @@ body {
 header {
     height: 50px;
     width: 100%;
-    background-color: aqua;
-    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid rgb(173, 173, 173);
+    position: fixed; /* locks the header to the top of the window */
+    font-family: sans;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.subject {
+    margin-left: 15px;
+    align-self: center;
+}
+
+.brand {
+    font-size: 30px;
+    flex: 3;
+    text-align: center;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons div {
+    margin-right: 10px;
+    padding: 5px 5px;
+    border: 1px solid rgb(0, 0, 126);
+    background-color: rgba(46, 46, 202, 0.822);
+    font-size: 12px;
+    color: white;
+    align-self: center;
 }
 
 /* ______________________________________________________________ */
@@ -29,8 +67,13 @@ header {
 }
 
 .entry-pic {
-    width: 900px;
-    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.entry-pic img {
+    max-width: 70%;
+    height: auto;
     background-color: rgb(0, 90, 23);
 }
 
@@ -43,7 +86,12 @@ header {
 .video, .pic {
     width: 650px;
     height: 400px;
-    background-color: darkgoldenrod;
+    margin-bottom: 50px;
+}
+
+.pic img {
+    width: 650px;
+    height: auto;
 }
 
 /* ______________________________________________________________ */
@@ -51,7 +99,86 @@ header {
 
 /* MORE NEWS */
 
+.more h3 {
+    font-weight: 900;
+    margin-left: 360px;
+}
+
+.more-news {
+    display: grid;
+    grid-gap: 10px;
+    height: 600px;
+    grid-template-columns: minmax(800px,900px) 320px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.more-news .same-subject {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+.same-subject div img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: rgb(109, 109, 109);
+}
+
+a:visited {
+    color: rgb(53, 53, 53);
+}
+
+.highlights {
+    display: grid;
+}
+
 /* ______________________________________________________________ */
 
 
 /* FOOTER */
+
+footer {
+    font-family: sans;
+    margin-top: 80px;
+}
+
+.news-links {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-top: 3px double black;
+    list-style-type: none;
+}
+
+.news-links li {
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    color: gray;
+    max-width: 100%;
+    height: 50px;
+    margin: 0 0 0 0;
+    font-size: 10px;
+    list-style-type: none;
+}
